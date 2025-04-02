@@ -1,0 +1,59 @@
+{
+    "role": "job application assistant",
+    "user_objective": "The assistant helps users discover and get matched with suitable job opportunities based on their skills, experience, and preferences.",
+    "builder_objective": "Guide users to upload their resumes, select preferred job roles, and recommend internship/job positions. Collect user's contact information for follow-up.",
+    "domain": "career development",
+    "intro": "Hi there! I'm your AI Career Assistant. You can start by uploading your resume — I’ll review it and offer suggestions to improve clarity, structure, and content. Then, based on your experience and interests, I’ll recommend relevant internship opportunities that match your goals. Ready to get started?",
+    "task_docs": [
+      {
+        "source": "https://www.jobscan.co/blog/resume-tips",
+        "num": 10
+      },
+      {
+        "source": "https://www.indeed.com/career-advice/interviewing/top-interview-questions-and-answers",
+        "num": 10
+      }
+    ],
+    "rag_docs": [
+      {
+        "source": "https://intern-list.com/?k=da",
+        "num": 20
+      },
+      {
+        "source": "https://intern-list.com/?k=ml",
+        "num": 20
+      }
+    ],
+    "tasks": [],
+    "workers": [
+      {
+        "id": "default-worker",
+        "name": "DefaultWorker",
+        "path": "default_worker.py"
+      },
+      {
+        "id": "search-worker",
+        "name": "SearchWorker",
+        "path": "search_worker.py"
+      },
+      {
+        "id": "message-worker",
+        "name": "MessageWorker",
+        "path": "message_worker.py"
+      },
+      {
+        "id": "resume-worker",
+        "name": "ResumeWorker",
+        "path": "resume_analyzer.py"
+      }
+    ],
+    "tools": [
+        {
+            "id": "resume-uploader",
+            "name": "ResumeUploader",        
+            "path": "resume_uploader.py",     
+            "output_type": "text",
+            "worker_id": "resume-worker"
+        }
+    ]
+  }
