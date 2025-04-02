@@ -1,0 +1,473 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello! I'm your Job Application Assistant. Let's find the perfect job for you based on your skills and preferences. How can I assist you in your job search today?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Please upload your current resume so we can analyze it for you.",
+                    "task": "Request the user to upload their current resume for analysis.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "resume-worker",
+                    "name": "ResumeWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize the ResumeWorker to analyze the uploaded resume and identify areas for improvement.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Based on our analysis, here are some suggestions to improve your resume's readability and content.",
+                    "task": "Provide feedback and specific suggestions for improving the resume's readability and content.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you need any further assistance or have additional questions about the feedback provided?",
+                    "task": "Ask the user if they require further assistance or have additional questions about the feedback provided.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Can you tell me about your skills, experience, and job preferences, such as industry, job type, and location?",
+                    "task": "Inquire about the user's skills, experience, and job preferences (e.g., industry, job type, location).",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "search-worker",
+                    "name": "SearchWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Use the SearchWorker to find job opportunities that match the user's skills, experience, and preferences.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here is a list of job opportunities that match your profile. Do any of these interest you?",
+                    "task": "Present a list of job opportunities to the user and ask if any of the options are of interest.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like to see more job options, or do you have any specific criteria to refine the search?",
+                    "task": "Ask if the user wants to see more options or has any specific criteria to refine the search.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you interested in any of these job listings? Let me know if you need next steps for application or further assistance.",
+                    "task": "Confirm the user's interest in any job listings and provide next steps for application or further assistance.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "default_worker",
+                    "name": "DefaultWorker"
+                },
+                "attribute": {
+                    "value": "Can you share your interests and career goals so I can tailor internship recommendations for you?",
+                    "task": "Inquire about the user's interests and career goals to tailor internship recommendations.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "search-worker",
+                    "name": "SearchWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Use the SearchWorker to find internship opportunities that align with the user's stated interests and goals.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are some internship opportunities that match your interests and career goals.",
+                    "task": "Present a curated list of internship opportunities to the user using the MessageWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you need more information or have any specific preferences for additional opportunities?",
+                    "task": "Ask if the user needs more information or has any specific preferences for additional opportunities.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "message-worker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like further assistance or guidance on how to apply for these internships?",
+                    "task": "Offer further assistance or guidance on applying for the internships, as needed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to improve their resume",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "5",
+            {
+                "intent": "User wants to discover job opportunities",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "5",
+            "6",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "10",
+            {
+                "intent": "User wants to discover internship opportunities",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "11",
+            "12",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "job application assistant",
+    "user_objective": "The assistant helps users discover and get matched with suitable job opportunities based on their skills, experience, and preferences.",
+    "builder_objective": "Guide users to upload their resumes, select preferred job roles, and recommend internship/job positions. Collect user's contact information for follow-up.",
+    "domain": "career development",
+    "intro": "Hi there! I'm your AI Career Assistant. You can start by uploading your resume \u2014 I\u2019ll review it and offer suggestions to improve clarity, structure, and content. Then, based on your experience and interests, I\u2019ll recommend relevant internship opportunities that match your goals. Ready to get started?",
+    "task_docs": [
+        {
+            "source": "https://www.jobscan.co/blog/resume-tips",
+            "num": 10
+        },
+        {
+            "source": "https://www.indeed.com/career-advice/interviewing/top-interview-questions-and-answers",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://intern-list.com/?k=da",
+            "num": 20
+        },
+        {
+            "source": "https://intern-list.com/?k=ml",
+            "num": 20
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "default-worker",
+            "name": "DefaultWorker",
+            "path": "default_worker.py"
+        },
+        {
+            "id": "search-worker",
+            "name": "SearchWorker",
+            "path": "search_worker.py"
+        },
+        {
+            "id": "message-worker",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        },
+        {
+            "id": "resume-worker",
+            "name": "ResumeWorker",
+            "path": "resume_analyzer.py"
+        }
+    ],
+    "tools": [
+        {
+            "id": "resume-uploader",
+            "name": "ResumeUploader",
+            "path": "resume_uploader.py",
+            "output_type": "text",
+            "worker_id": "resume-worker"
+        }
+    ],
+    "nluapi": "",
+    "slotfillapi": ""
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "task_name": "Provide feedback and suggestions for improving the resume",
+        "steps": [
+            "Request the user to upload their current resume for analysis.",
+            "Utilize the ResumeWorker to analyze the uploaded resume and identify areas for improvement.",
+            "Provide feedback and specific suggestions for improving the resume's readability and content.",
+            "Ask the user if they require further assistance or have additional questions about the feedback provided."
+        ]
+    },
+    {
+        "task_name": "Recommend job opportunities based on skills, experience, and preferences",
+        "steps": [
+            "Inquire about the user's skills, experience, and job preferences (e.g., industry, job type, location).",
+            "Use the SearchWorker to find job opportunities that match the user's skills, experience, and preferences.",
+            "Present a list of job opportunities to the user and ask if any of the options are of interest.",
+            "Ask if the user wants to see more options or has any specific criteria to refine the search.",
+            "Confirm the user's interest in any job listings and provide next steps for application or further assistance."
+        ]
+    },
+    {
+        "task_name": "Recommend internship opportunities based on interests and goals",
+        "steps": [
+            "Inquire about the user's interests and career goals to tailor internship recommendations.",
+            "Use the SearchWorker to find internship opportunities that align with the user's stated interests and goals.",
+            "Present a curated list of internship opportunities to the user using the MessageWorker.",
+            "Ask if the user needs more information or has any specific preferences for additional opportunities.",
+            "Offer further assistance or guidance on applying for the internships, as needed."
+        ]
+    }
+]
