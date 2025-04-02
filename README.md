@@ -2,7 +2,7 @@
 
 An intelligent job application assistant that allows users to upload their resume, receive personalized readability feedback, and get matched with internship opportunities using real-time data from platforms like [Intern-List](https://intern-list.com).
 
-This project is built on the [Arklex Agent First Organization framework](https://github.com/arklexai/Agent-First-Organization), designed for rapid AI agent prototyping with LangChain and OpenAI APIs.
+This project is built on the [Arklex Agent First Organization framework](https://arklexai.github.io/Agent-First-Organization/), designed for rapid AI agent prototyping with LangChain and OpenAI APIs.
 
 ---
 
