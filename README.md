@@ -93,7 +93,6 @@ This starts the FastAPI service on `http://localhost:8000`.
 ```
 AI_Career_Agent/
 ├── arklex/                # Core Arklex agent framework
-├── assets/                # Chrome driver, logos, etc.
 ├── examples/              # Task config files
 ├── logs/                  # Logs from execution
 ├── model_api.py           # Launch API server for model evaluation
