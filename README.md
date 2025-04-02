@@ -116,12 +116,6 @@ AI_Career_Agent/
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License. See the `LICENSE.md` file for details.
-
----
-
 ## 🙋 Contact
 
 Developed by [ChengHsin Chang](https://www.linkedin.com/in/cheng-hsinchang/)  
